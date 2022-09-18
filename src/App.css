@@ -1,0 +1,82 @@
+body{
+  background-color: black !important;
+}
+
+.App {
+  background-color: #041922;
+  margin: auto;
+  text-align: center;
+  display: block;
+  direction: ltr;
+  /* border: 1px solid white; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.g-opacity-transition{
+  width: 100% ;
+  transition: opacity 250ms ease;
+  background: #f2f2f2 repeat-y 50% 0;
+  z-index: 2000 ;
+ }
+
+.modal_content{
+  position: absolute;
+  top:30%;
+  text-align: center;
+  /* display: block; */
+  width:550px;
+  height:200px;
+  z-index: 3000;
+  background-color: white;
+}
+
+#main-container {
+  place-items: center center;
+}
+
+#sign-in-form {
+  max-width: 330px;
+}
+
+.bootstrap-logo {
+  width: 72px;
+  height: 72px;
+}
+
+.form-control:focus {
+  z-index: 5;
+}

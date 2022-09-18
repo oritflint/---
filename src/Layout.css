@@ -1,0 +1,201 @@
+body{
+    background-color: #041922;
+    direction: ltr;
+
+}
+.plHeader{
+    width: 100%;
+    height:80px;
+    display:flex;
+    /* direction: rtl; */
+    text-align: left;
+    color:white;
+    background-color: black;
+    padding:10px;
+}
+
+
+.plHeader input[type=text] {
+    margin: 8px 2px;
+    height:40px;
+    text-align: left;
+    width: 400px;
+    border:none;
+}
+
+.plHeader p{
+    /* height: 15px;
+    width: 15px; */
+    margin:3px 10px 0px;
+    display: flex;
+    /* text-align: center;
+    vertical-align: auto; */
+    border-radius: 2px;
+}   
+
+.plHeader i{
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+.plHeaderContent{
+    margin:auto;
+    display: flex;
+    width:1000px;    
+}
+
+.plHeaderContent span{
+    height:60px;
+    margin: 0px 20px;
+      
+}
+
+.loginSec{
+    width:150px;
+    padding: 15px 10px;
+    text-align: right;
+}
+
+.plHeaderContent .searcBtn{
+    height:58px;
+    width: 70px;
+    padding: 12px;
+    border: gray 1px solid;
+    text-align: center;
+    margin:0px;
+}
+
+.plHeaderContent .searchContent{
+    margin:auto;
+    display:flex;
+
+}
+
+.searchBorder{
+    background-color: white;
+    width: 410px;
+    height:58px;
+    border: gray 1px solid;
+
+}
+
+.plBody{
+    margin:auto;
+    display: flex;
+    width:1000px;
+}
+
+.songList{
+    width:500px;   
+    margin:20px;
+    /* border: 1px solid white; */
+}
+.songDetails{
+    
+    margin:20px;
+    width:500px;
+    height:450px;
+    color:white;
+    /* background-color: darkcyan; */
+    /* border-radius:20px; */
+    padding: 10px;
+    border: 1px solid white;
+} 
+
+.popup{
+    height:30px;
+    width:200px;
+    background-color: goldenrod;
+    text-align: center;
+    box-shadow: 1ch;
+    /* border-radius: 10%; */
+}
+
+.delBtn{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.SrchResult{
+    /* left:10px; */
+    z-index: 1000;
+    margin-top: 50px;
+    direction: ltr;
+    width: 500px;
+    position: absolute;
+    background-color: gray;
+    display: block;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.SrchResult :hover{
+    border:darkgray;
+    transition: 0.3s;
+}
+
+.songSrchItem{
+    /* direction: ltr; */
+    margin: 10px 2px;
+    display: flex;
+}
+
+.plus-icon{
+    vertical-align: middle;
+    border: 1px solid white;
+    position: absolute;
+    right:5px;
+    padding: 2px 6px;
+}
+
+.songTitle{
+    direction: ltr;
+    text-align: left;
+    color:white;   
+    width:450px;
+    /* margin-left: 0px;  */
+    /* position: fixed; */
+}
+
+.track{
+    width: 490px;
+    height: 60px;
+    background-color: black;
+    color:white;
+    margin:5px;
+    padding:0px  5px;
+    border-radius: 10px;
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.trackDetails{
+    direction: ltr;
+    display: flex;
+}
+
+.trackImg{
+    text-align: left;
+    color:white;   
+    width:50px;
+}
+
+.trackText{
+    text-align: left;
+    color:white;
+    width:400px;
+}
+
+.songDelete{
+    text-align: right;
+    color:white;
+    margin-top: 8px;
+    cursor: pointer;
+     /* margin-right:5px;  */
+    /* position: absolute; */
+    /* border: 1px solid white; */
+}
+
