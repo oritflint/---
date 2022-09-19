@@ -3,6 +3,7 @@ import { useContext, useState } from 'react'
 import axios from "axios"
 
 function Song(props){
+    const baseURL = "https://imusify-server.herokuapp.com";
     const songTrack = props.obj
     const songList =useContext(SongsList)[0]
     const setSongList =useContext(SongsList)[2]
@@ -45,7 +46,7 @@ function Song(props){
     
     function deleteFromList(){
         const songTrackId = songTrack._id 
-        const response = axios.post('http://localhost:4000/api/songs/deletesong',{
+        const response = axios.post(`${baseURL}/api/songs/deletesong`,{
             _id :  songTrackId  
         })
         .then(({response})=>{

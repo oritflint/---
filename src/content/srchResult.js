@@ -4,6 +4,7 @@ import { useContext, useState } from 'react'
 import axios from "axios"
 
 function SrchResult(props){
+    const baseURL = "https://imusify-server.herokuapp.com";
     const arrRslt = props.data
   
     const [isShow,setIsShow]=useState(true)
@@ -29,7 +30,7 @@ function SrchResult(props){
     function addToList(songId){
         debugger
         const iSong = arrRslt.results[songId]
-        const response = axios.post('http://localhost:4000/api/songs/newsong',{
+        const response = axios.post(`${baseURL}/api/songs/newsong`,{
             user_id : 0, 
             playlist_id : 0, 
             name : iSong.title, 

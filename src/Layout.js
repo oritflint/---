@@ -13,6 +13,8 @@ import {SongsList} from './Context/AppContext'
 import Login from './content/Login';
 
 function Layout(props){
+    const baseURL = "https://imusify-server.herokuapp.com";
+
     const [isLogged, setIsLogged] = useState(localStorage.token);
     const [songList,setSongList] = useState([])    //list of songs
     const [songId,setSongId] = useState(null)      //the user adding new song in the popup
@@ -86,7 +88,7 @@ function Layout(props){
 useEffect(()=>{
   
     isLogged ?
-    axios.get('http://localhost:4000/api/songs')
+    axios.get(`${baseURL}/api/songs`)
     .then(({data}) => {
         console.log(data)
         const songs = data.map(e=> {

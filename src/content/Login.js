@@ -9,13 +9,14 @@ import { SongsList } from '../Context/AppContext';
 
 export default function Login({setIsLogged,setCurrUser}){
 
-    const email=useRef()
+  const baseURL = "https://imusify-server.herokuapp.com";
+  const email=useRef()
     const password=useRef()
 
     const submitForm=(e)=>{
       debugger
         e.preventDefault()
-        const response = axios.post('http://localhost:4000/api/users/login/',{
+        const response = axios.post(`${baseURL}/api/users/login/`,{
             email: email.current.value,
             password: password.current.value
         })
@@ -23,10 +24,10 @@ export default function Login({setIsLogged,setCurrUser}){
             console.log("userData:", data)
 
             localStorage.token = data.token
-            localStorage.user = data.userDetails.firstname
+            localStorage.user = data.userDetails
 
             setIsLogged(localStorage.token)
-            setCurrUser(data.userDetails)
+            setCurrUser(data.userDetails.firstname)
         })
         .catch((err)=> console.log(err))
 }
