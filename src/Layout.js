@@ -25,7 +25,6 @@ function Layout(props){
     const [confirmTxt,setConfirmTxt] = useState('')  //Question text
     const [isDisplayConfirmWin, setIsDisplayConfirmWin] = useState(false)
 
-    
 // // new song added to list
 //  useEffect ( ()=>{
   
